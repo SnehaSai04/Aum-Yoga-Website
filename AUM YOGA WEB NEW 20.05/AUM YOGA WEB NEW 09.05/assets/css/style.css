@@ -1,0 +1,937 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700|Oswald:200,300,400,500,600,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Abolition';
+    color: black;
+    background: linear-gradient(to bottom, #EAE2B7, #FAA307, #F48C06,#F48C06, #E85D04, #DC2F02);
+    background-size: cover; /* To make sure the background image covers the entire viewport */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kreon', sans-serif;
+}
+
+/* ---------------------------------------------------------------- HEADER */
+
+/* Header created with help from https://www.youtube.com/watch?v=oLgtucwjVII&feature=youtu.be and adjusted to fit the SK Training website*/
+
+pre {
+    font-family: 'Kreon', sans-serif;
+}
+header {
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid rgba(255, 0, 0, 0);
+    z-index: 2;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 0;
+}
+
+.navigation {
+    box-sizing: border-box;
+    height: 60px;
+    width: 100%;
+}
+
+#logo {
+    font-family: Oswald;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #353628;
+    font-size: 35px;
+    line-height: 60px;
+    padding: 0 30px;
+    cursor: pointer;
+}
+
+.logo-index:hover {
+    text-decoration: none;
+}
+
+.navigation ul {
+    list-style: none;    
+    float: right;
+    margin-right: 20px;    
+}
+
+.navigation ul li {
+    display: inline-block;
+    line-height: 59px;
+    margin: 0;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.active,.menu-item a:hover {
+    text-decoration: none;
+    border-radius: 25px;
+    background: #FF0000;
+    transition: .5s;
+    font-size: 21px;
+    color: white;
+    padding: 7px 13px;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #353628;
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+dl, ol, ul {
+    margin-bottom: 0;
+} 
+
+@media screen and (max-width: 768px) {
+    #logo {
+        height: 10px;
+        width: 50px;
+    }
+    .logo-index {
+        height: 10px;
+        width: 50px;
+    }
+}
+/* ---------------------------------------------------------------- END HEADER */
+
+/* ---------------------------------------------------------------- BANNER */
+/* Banner created with help from https://jorgan-source.github.io/MilestoneProject1JOrgan/ and adjusted to fit the SK Training website-*/
+
+.banner-container {
+    background: url(../images/yogi-removebg-preview.png) no-repeat center; 
+    background-size: 900px; /* Keep the original size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: 2px solid #000000; 
+    margin-top: 0px;
+    visibility: visible; /* Change visibility to visible */
+}
+
+#banner {
+    background-color: #ffa12657;
+    margin-left: 60%;
+}
+
+.cover-text {
+    color: #000000;
+    font-family: Oswald;
+    text-transform: uppercase;
+    text-align: center;
+}
+    
+.cover-text h2 {
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-family: Oswald;
+}
+.cover-text h3 {
+    letter-spacing: 0px;
+    font-size: 22px;
+    font-family: 'Abolition';
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .banner-container {
+    background: url(../images/banner\ 2.png) no-repeat center; 
+    background-size: 600px; /* Keep the original size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: 2px solid #000000; 
+    margin-top: 0px;
+    visibility: visible; /* Change visibility to visible */
+    
+    height: 400px;
+    
+    }
+    #banner {
+        margin-left: 0; /* Adjust margin for smaller screens */
+    }
+}
+
+#heading {
+    margin-left: 520px;
+    margin-right: 150px;
+}
+@media screen and (max-width: 768px) {
+    #heading {
+        margin-left: 130px;
+        margin-right: 50px;
+    }
+}
+
+/*-------------------------------------------- head maps-----------------------------*/
+.block1 {
+    height:220px;
+    width: 500px; 
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    justify-content:center ;
+    padding-top: 30px;
+    font-size: larger;
+    float: right;
+    margin-top: 20px;
+}
+.block2 {
+    height:220px; 
+    width: 500px; 
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    justify-content:center ;
+    padding-top: 30px;
+    font-size: larger;
+    float: left;
+    margin-top: 20px;
+}
+.box1 {
+    float:left;
+    height:30px;
+    width: 30px;
+    background-color: white;
+    color:white ;
+    margin-bottom:auto;
+    transform: rotate(45deg);
+    margin-left:-15px;
+}
+.box2 {
+    float:right;
+    height:30px;
+    width: 30px;
+    background-color: white;
+    color:white ;
+    margin-bottom:auto;
+    transform: rotate(45deg);
+    margin-right: -15px ;
+}
+.map1 {
+    border:0;
+    float: left; 
+    display: inline-block; 
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-right:100px;
+}
+.map2 {
+    border:0;
+    float: right; 
+    display: inline-block; 
+    margin-top: 20px;
+    border-radius: 20px;
+}
+@media screen and (max-width: 768px) {
+    .block1 {
+        height:100px;
+        width: 200px; 
+        background-color: white;
+        border-radius: 20px;
+        text-align: center;
+        justify-content:center ;
+        padding-top: 10px;
+        font-size: 10px;
+        float: right;
+        margin-top: 20px;
+    }
+    .block2 {
+        height:100px; 
+        width: 200px; 
+        background-color: white;
+        border-radius: 20px;
+        text-align: center;
+        justify-content:center ;
+        padding-top: 10px;
+        font-size: 10px;
+        float: left;
+        margin-top: 20px;
+    }
+    .box1 {
+        float:left;
+        height:15px;
+        width: 15px;
+        background-color: white;
+        color:white ;
+        margin-bottom:auto;
+        transform: rotate(45deg);
+        margin-left:-8px;
+    }
+    .box2 {
+        float:right;
+        height: 15px;
+        width: 15px;
+        background-color: white;
+        color:white ;
+        margin-bottom:auto;
+        transform: rotate(45deg);
+        margin-right: -8px ;
+    }
+    .map1 {
+        height:100px;
+        width: 200px; 
+        border:0;
+        float: left; 
+        display: inline-block; 
+        margin-top: 20px;
+        border-radius: 20px;
+        margin-right:20px;
+    }
+    .map2 {
+        height:100px;
+        width: 200px; 
+        border:0;
+        float: right; 
+        display: inline-block; 
+        margin-top: 20px;
+        border-radius: 20px;
+    }
+    .heading2 {
+        font-size: smaller;
+    }
+}
+/*-------------------------------------------- head maps end-----------------------------*/
+
+/*------------------------------------------------highlites--------------------------*/
+.high1 {
+    display: flex; 
+    flex-direction: row; /* Place items side by side */
+    align-items: center; /* Vertically align items */
+    margin-right: 150px; 
+    margin-left: 150px; 
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .high1 {
+        flex-direction: column; /* Stack items vertically */
+        margin-right: 20px; 
+        margin-left: 20px; 
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+}
+
+
+.main-image {
+    width: 310px; /* Fixed width for images on larger screens */
+    height: 200px; /* Fixed height for images */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+@media screen and (max-width: 768px) {
+    .main-image {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+    .vertical-line1 {
+        display: none; /* Hide the vertical line */
+    }
+    .highall {
+        padding: 10px 25px;
+    }
+    
+}
+
+/* ---------------------------------------------------------------- END BANNER */
+
+/* ---------------------------------------------------------------- BUTTONS */
+
+#select-user {
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+.btn--select-user {
+  font-weight: bold;
+  border-radius: 40px;
+  height: 60px;
+  width: 300px;
+  padding-top: 10px;
+  color: white;
+  background-color: #353628;
+  border-color: #353628;
+  text-align: center;
+  margin: 10px;
+}
+
+.btn--select-user:hover,
+.btn--select-user:active,
+.btn--select-user:focus,
+.btn--select-user:active:focus {
+  background-color: #ef733e;
+  border-color: #ef733e;
+  color: white;
+}
+
+#select-user ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input[type=submit] {
+  background-color: #353628;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ef733e;
+}
+
+/* ---------------------------------------------------------------- END BUTTONS */
+
+/* ---------------------------------------------------------------- ABOUT */
+
+.about {
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.h4-about {
+    text-align: center;
+}
+
+.p-about {
+    text-align: justify;
+}
+
+.link-in-text {
+    color: inherit;
+}
+
+
+ /* Style for the image */
+ #rotatingImg {
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    animation: rotate 5s linear infinite; /* Change duration and timing function as needed */
+}
+
+/* Keyframes for the rotation animation */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* ---------------------------------------------------------------- END ABOUT */
+
+/* ---------------------------------------------------------------- Yoga tips */
+
+.container-courses {
+    margin-top: 30px;
+    margin-bottom: 30px;  
+    text-align: justify;
+}
+
+.col-md-1 i {
+    color: #FF0000;
+}
+
+/* ---------------------------------------------------------------- END Yoga Tips */
+
+/* ---------------------------------------------------------------- Events */
+
+.page-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+hr {
+    margin: auto;
+    width: 160px;
+    border-top: 4px solid #FF0000;
+}
+
+.container-fees {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 90%;
+}
+
+.col-fees {
+    border: 1px solid #353628;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #eae2b77a;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.col-fees i {
+    font-size: 30px;
+    color: #ef733e;
+    
+}
+
+/* ---------------------------------------------------------------- END Events */
+
+/* ---------------------------------------------------------------- CONTACT FORM /SIGN IN */
+
+/* Contact and sign in form created with help from https://www.w3schools.com/howto/howto_css_contact_form.asp and adjusted to fit the SK Training website*/
+
+input[type=text], input[type=password], input[type=email], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+#subject {
+    height: 200px;
+}
+
+.form-container {
+  border-radius: 5px;
+  background-color: #fafafa;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-information {
+    padding-top: 20px;
+
+}
+.image-container {
+    display: flex;
+    margin-top: 30px ;
+  }
+  
+  .image-content {
+    flex: 1;
+    margin-right: 0px; /* Adjust as needed */
+  }
+  
+ .vertical-line1 {
+    width: 5px;
+    height: 200px;
+    margin-left:40px;
+    margin-right: 40px;
+    background-color: black;
+  }
+  
+  .description-content {
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  
+/* ---------------------------------------------------------------- END CONTACT FORM */
+
+/* ---------------------------------------------------------------- RESUME */
+
+.timeline-c {
+    padding: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline:before {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 2px solid #353628;
+    border-radius: 50%;
+    background: #ef733e;
+    z-index: 1;
+}
+
+.timeline:after {
+    content: "";
+    border-left: 2px solid #353628;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0.7rem;
+    z-index: 0;
+}
+
+.timeline h4 {
+    text-transform: uppercase;
+}
+
+.timeline .timeline-date {
+    padding-right: 3rem;
+}
+
+.timeline .timeline-date span {
+    display: inline-block;
+    font-weight: bold;
+    padding: .2rem .4rem;
+    margin: -4px 0 1rem 0;
+}
+
+.timeline .timeline-info {
+    flex: 1;
+    margin: 0 0 2rem 0;
+}
+
+.timeline-info h4 {
+    font-weight: 500;
+}
+
+.timeline-info p {
+    margin-bottom: 8px;
+}
+
+.timeline-info p {
+    margin-bottom: 0;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.col-md-2 {
+        padding: 10px;
+}
+
+.container-resume {
+     padding-bottom: 30px;
+}
+
+#logos {
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------- END RESUME */
+
+/* ---------------------------------------------------------------- FOOTER */
+
+footer {
+    background-color:transparent;
+    color: #fafafa;
+    padding: 0;
+    margin-top: 20px;
+    text-align: center;
+    border-top: 1px solid white;
+}
+
+.social-links {
+  text-align: center;
+}
+
+.social-links li {
+  display: inline;
+}
+
+.social-links i {
+  font-size: 1.75rem;
+  padding: 2%;
+  color: #fff;
+  
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.social-links li a i:hover {
+    text-decoration: none;
+    color: #ef733e;
+}
+
+/* ---------------------------------------------------------------- END FOOTER */
+
+/* ---------------------------------------------------------------- MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) {
+    #select-user ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) { 
+    .btn--select-user {
+        margin: 32px;
+    }
+    #select-user {
+        margin-top: 64px;
+    }
+}
+
+@media screen and (min-width: 1024px) { 
+    .banner-container {
+        height: 35em;
+    }
+}
+
+@media screen and (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .navigation ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #353628;
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 2;
+    }
+
+    .navigation ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .navigation ul li a {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .active,.navigation a:hover {
+        background: none;
+        color: #ef733e;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) { 
+    .rounded-circle {
+        padding: 160px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .courses-details {
+        text-align: center;
+    }
+
+    #logos, #contact {
+    text-align: justify;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .timeline {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .timeline:before {
+        left: 10rem;
+    }
+
+    .timeline:after {
+        left: 10.65rem;
+    }
+
+    .timeline .timeline-date .span1 {
+    margin: -4px 27.68px 1rem 0;
+    }
+
+     .timeline .timeline-date .span2 {
+    margin: -4px 28.46px 1rem 0;
+    }
+
+     .timeline .timeline-date .span3 {
+    margin: -4px 25.43px 1rem 0;
+    }
+
+     .timeline .timeline-date .span4 {
+    margin: -4px 22.18px 1rem 0;
+    }
+
+    .timeline .timeline-date .span5 {
+    margin: -4px 28.75px 1rem 0;
+    }
+
+    .timeline .timeline-date .span6 {
+    margin: -4px 25.43px 1rem 0;
+    }
+}
+
+/* ---------------------------------------------------------------- END MEDIA QUERIES */
+
+/* Styles for the chakra article */
+.chakra-article {
+    margin-top: 50px;
+}
+
+.chakra {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chakra h3 {
+    color: #333;
+}
+
+.chakra p {
+    color: #666;
+}
+.chakra-info {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.chakra-info li {
+    list-style-type: disc;
+    text-align: left;
+    margin-left: 20px;
+}
+.centered-image{
+        display: flex;
+        justify-content: center;
+}
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+@keyframes driftRightToLeft {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(calc(-65% + 190px)); }
+}
+.image-container{
+    animation: driftRightToLeft 4s ease alternate;
+}
+.image-container {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    max-width: 100%; /* Ensure it doesn't overflow the screen */
+    margin: 0 auto; /* Horizontally center the container */
+}
+
+.image-content {
+    flex: 1; /* Allow the image to take up available space */
+    padding: 20px; /* Add some spacing around the image */
+}
+
+.main-image {
+    display: block;
+    
+}
+
+.description-content {
+    flex: 2; /* Allow the description to take up more space */
+    padding: 20px; /* Add some spacing around the description */
+}
+
+/* Add any additional styling you need */
+h3 {
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.image-content {
+    flex: 1;
+}
+
+
+.vertical-line {
+    border-left: 2px solid #000;
+    height: 300px; /* Adjust as needed */
+    margin: 0 40px; /* Adjust as needed */
+}
+
+.description-content {
+    flex: 1;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.yoga-center {
+    clear: both;
+}
+
